@@ -711,15 +711,19 @@ const products = [
 ];
 
 function render(searchValue) {
-  // todo create the html for the products which matches the searchValue:
   // hint: use array-methods on the products-array and .join("") the result
+  const productsHtml = "TODO";
 
-  const productsHtml = searchValue;
-
+  // update the html of the search-result-container:
+  // this means the element with the id "search-result-container"
+  // will remove the current html and set the new one:
   document.getElementById("search-result-container").innerHTML = productsHtml;
 }
-
+// for the element with the id "update-button": execute the
+// defined function onclick:
 document.getElementById("update-button").onclick = () => {
+  // get the input-value of the input-element with the id
+  // "search-input" and assign it to the variable "searchValue"
   const searchValue = document.getElementById("search-input").value;
   render(searchValue);
 };
